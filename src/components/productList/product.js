@@ -30,5 +30,21 @@ export const products = [
         star: 4,
         price: '$392',
         id: 4
+    },
+    {
+        img: 'https://picsum.photos/200/300',
+        category: 'Lamp',
+        name: 'Lamp',
+        star: 4,
+        price: '$392',
+        id: 6
+    },
+    {
+        img: 'https://picsum.photos/200/300',
+        category: 'Table',
+        name: 'Table',
+        star: 4,
+        price: '$392',
+        id: 5
     }
 ]

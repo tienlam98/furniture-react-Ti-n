@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../components/layout/Layout'
 import ProductList from '../../components/productList/ProductList'
 import Search from '../../components/search/Search'
+import Teaser from '../../components/teaser/Teaser'
 import WhyChooseUs from '../../components/whychooseus/WhyChooseUs'
 import styles from './homepage.module.css'
 
@@ -23,6 +24,7 @@ function HomePage() {
         </div>
         <WhyChooseUs /> 
         <ProductList />
+        <Teaser />
       </div>
     </Layout>
   )
