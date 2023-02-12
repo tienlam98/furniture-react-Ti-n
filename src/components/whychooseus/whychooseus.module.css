@@ -1,0 +1,13 @@
+.whychooseus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.whychooseusreason {
+    width: 20%;
+
+}
+a {
+    color: #E58411;
+    font-size: 14px;
+}

@@ -1,8 +1,16 @@
+.header {
+    z-index: 10;
+    position: relative;
+}
 .title {
     color: white;
 }
 .navbar{
-    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0;
+    height: 80px;
 }
 .navbarMenu{
     display: flex;

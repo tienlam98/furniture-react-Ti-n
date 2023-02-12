@@ -5,7 +5,7 @@
 }
 
 .searchInput{
-    background-color: rgba(255, 255, 255,0.6);
+    background-color: rgba(255, 255, 255,0.2);
     padding: 0px 60px 0px 20px;
     min-width: 344px;
     height: 56px;
@@ -15,6 +15,12 @@
     font-size: 18px;
     color: #FFFFFF;
 
+}
+.searchInput:active, .searchInput:focus {
+    outline: unset;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 .searchButton {
     position: absolute;

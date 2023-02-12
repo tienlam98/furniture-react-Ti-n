@@ -1,0 +1,10 @@
+.productlistTitle {
+    width: 389px;
+    height: 52px;
+    font-size: 42px;
+    color: #1E1E1E;
+}
+.product-item-container {
+    display: flex;
+    flex-direction: column;
+}

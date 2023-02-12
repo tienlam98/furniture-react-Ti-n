@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import CartPage from './pages/CartPage';
 import HomePage from './pages/homepage/HomePage';
+import './index.css';
+
 const router = createBrowserRouter([
   {
     path: "/",

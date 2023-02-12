@@ -4,7 +4,7 @@ import styles from './header.module.css'
 
 function Header() {
   return (
-    <header id="main">
+    <header className={styles.header}>
       <nav className={styles.navbar}>
       <span>Panto</span>
       <div className={styles.navbarMenu}>

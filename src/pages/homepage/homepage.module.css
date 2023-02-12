@@ -1,21 +1,35 @@
 .homepage {
+}
+
+.homepageBanner {
     display: grid;
-    
-    /* background-size
-    : cover;
-    height: 68rem;
-    background-repeat: no-repeat; */
-    /* background-image: url(/public/images/main-banner.png);
-    background-repeat: no-repeat;
-    height: 50rem; */
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 86.13%, #FFFFFF 100%), url(/public/images/main-banner.png); */
+    margin-top: -80px;    
+
+}
+
+.homepageTitle {
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.homepageTitle2 {
+    color: white;
+    font-size: 24px;
+    opacity: 0.8;
+    line-height: 38px;
+    text-align: center;
 }
 .homepageImg {
-    z-index: -1;
     width: 100%;
-    position: absolute;
-    grid: 1/1;
+    grid-column: 1 /span 1;
+    grid-row: 1 /span 1;
 }
 .homepageContent {
-    grid: 1/1;
+    grid-column: 1 / span 1;
+    grid-row: 1 /span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
