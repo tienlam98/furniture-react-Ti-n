@@ -1,4 +1,6 @@
 import React from 'react'
+import Carousel from '../../components/cards/Carousel'
+import Footer from '../../components/footer/Footer'
 import Layout from '../../components/layout/Layout'
 import ProductList from '../../components/productList/ProductList'
 import Search from '../../components/search/Search'
@@ -22,9 +24,11 @@ function HomePage() {
 
         </div>
         </div>
-        <WhyChooseUs /> 
+        <WhyChooseUs />
         <ProductList />
-        <Teaser />
+        <Teaser textTitle={'experiences'} textTitle2={'we provide you the best experience'} textDes={'You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials'}/>
+        <Teaser textTitle={'Materials'} textTitle2={'Very serious materials for making furniture'} textDes={'Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price'}/>
+        <Carousel name={'abc'} job={'abcd'} quote={'vvv'}/>
       </div>
     </Layout>
   )

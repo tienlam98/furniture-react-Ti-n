@@ -1,0 +1,35 @@
+
+.footerMain {
+    display: flex;
+    justify-content: space-between;
+    max-width: 998px;
+    margin: 0 auto
+}
+.footerPanto {
+    width: 25%;
+}
+.footerPanto p:first-child {
+    font-size: 28px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+}
+.footerService, .footerFurniture, .footerFollow, .footerDown{
+    cursor: pointer;
+    
+}
+.footerService p:first-child, .footerFurniture p:first-child, .footerFollow p:first-child {
+    color: #F6973F;
+    margin-bottom: 20px;
+
+}
+.footerDown {
+    display: flex;
+    justify-content: space-between;
+    max-width: 998px;
+    margin: 0 auto;
+}
+.footerDown2 {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}

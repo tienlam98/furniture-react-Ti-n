@@ -10,7 +10,7 @@ function WhyChooseUs() {
         <div className={styles.whychooseusreason} key={reason.title}>
           <h2>{reason.title}</h2>
           <p>{reason.description}</p>
-          <a href={reason.link}>More info <img src='./images/arrow.svg'></img></a>
+          <a className={styles.whychooseusreasonLink} href={reason.link}>More info <img src='./images/arrow.svg'></img></a>
         </div>
       ))}
     </div>

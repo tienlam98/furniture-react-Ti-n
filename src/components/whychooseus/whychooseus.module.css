@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+
 }
 .whychooseusreason {
     width: 20%;
 
 }
-a {
+.whychooseusreasonLink {
     color: #E58411;
     font-size: 14px;
 }

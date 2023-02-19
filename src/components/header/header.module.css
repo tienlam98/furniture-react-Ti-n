@@ -11,9 +11,40 @@
     align-items: center;
     padding-top: 0;
     height: 80px;
+    
 }
 .navbarMenu{
     display: flex;
-    
+    justify-content: space-around;
+    width: 40%;
+}
+.headerTitle{
+    color: white;
+    font-size: 28px;
+}
+.headerMenu {
+    padding: 0;
+}
+.headerMenu {
+    position: relative;
+}
+.headerDropdown {
+    display: none;
+    position: absolute;
+}
+.headerBtn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+}
+.headerIcon {
+    cursor: pointer;
+    color: white;
+
+}
+a {
     list-style: none;
+    text-decoration: none;
+    color: white;
 }

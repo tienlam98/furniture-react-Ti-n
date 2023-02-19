@@ -1,13 +1,17 @@
 import React from 'react'
-
+import styles from './productlist.module.css'
 function ProductItem({product}) {
   return (
-    <div className='product-item-container'>
-        <img src={product.img}></img>
-        {product.name}
-        {product.star}
-        {product.category}
-        {product.price} 
+    <div >
+      <div className={styles.productItemContainer}>
+      <div className={styles.productCell}>
+      <div><img src={product.img}></img></div>
+      <div >{product.name}</div>
+      <div>{product.star}</div>
+      <div>{product.category}</div>
+      <div>{product.price}</div>
+        </div>
+      </div>
     </div>
   )
 }

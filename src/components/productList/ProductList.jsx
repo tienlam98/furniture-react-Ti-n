@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './productlist.module.css'
 import {products} from './product'
 import ProductItem from './ProductItem'
@@ -11,16 +11,22 @@ function ProductList() {
   const [category, setCategory] = useState(categoryList[0]);
 
   const currentProducts = products.filter(prd => prd.category === category);
-
+  const [product, setProduct] = useState([])
+  useEffect(() => {
+    fetch('https://fe21-db.vercel.app/furniture')
+    .then((response) => response.json())
+    .then((data) => setProduct(data));;
+  }, [])
   return (
     <div className={styles.productlist}>
         <h2 className={styles.productlistTitle}>Best Selling Product</h2>
+        <div className={styles.productlistMenu}>
         <ProductListMenu categoryList={categoryList} category={category} setCategory={setCategory}/>
-        <div className={styles.productList__list}>
-        {currentProducts.map((product) => 
-          <ProductItem key={product.id} product={product}/>
-          )}
+        {product.map((product) =>
+        <ProductItem className={styles.productlistItem} product={product} key={product._id} />
+        )}
         </div>
+        
         <a href='#'>View All <img src='./images/arrow.svg'></img></a>
     </div>
   )

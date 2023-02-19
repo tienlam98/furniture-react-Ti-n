@@ -6,24 +6,33 @@ function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-      <span>Panto</span>
-      <div className={styles.navbarMenu}>
-          <div>
-          <select id="selectMenu">
-            <option>Furniture</option>
-            <option>Chair</option>
-            <option>Bed</option>
-            <option>Sofa</option>
-            <option>Lamp</option>
-          </select>
+        <span className={styles.headerTitle}>Panto</span>
+        <div className={styles.navbarMenu}>
+          <div className={styles.headerMenu}>
+            <span className={styles.headerBtn}>Furniture</span>
+            <img src='./images/downArrow.svg' className={styles.headerIcon}></img>
+            <ul className={styles.headerDropdown}>
+              <li>Chair</li>
+              <li>Bed</li>
+              <li>Sofa</li>
+              <li>Lamp</li>
+            </ul>
           </div>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Shop</a></li>
-      </div>
-      <img src='/images/cart-icon.svg'></img>
-    </nav>
+          <li>
+            <a href="#">Shop</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Shop</a>
+          </li>
+        </div>
+        <img src="/images/cart-icon.svg"></img>
+      </nav>
     </header>
   );
 }
