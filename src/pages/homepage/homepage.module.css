@@ -33,3 +33,8 @@
     align-items: center;
     flex-direction: column;
 }
+.testimonialCardContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 2rem;
+}

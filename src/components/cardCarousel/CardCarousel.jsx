@@ -13,7 +13,7 @@ import {addToCart} from "../../redux/action"
 export default function CardCarousel({ dataProduct, tempDataProduct,setTempDataProduct }) {
   
   const handleFilterSearch = () => {
-    
+
   }
 
   const dispatch = useDispatch();
@@ -56,17 +56,17 @@ export default function CardCarousel({ dataProduct, tempDataProduct,setTempDataP
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className={style.swiper}
       >
         {tempDataProduct.map((product, index) => {
           return (
             <SwiperSlide>
-              <div className="productCard">
-                <div className="imgContainer">
+              <div className={style.productCard}>
+                <div className={style.imgContainer}>
                   <img style={{width: '100%'}} src={product.img} alt="productImg" />
                 </div>
-                <p className="type">{cateProduct(product.categories)}</p>
-                <h3>{product.name}</h3>
+                <p className={style.imgType}>{cateProduct(product.categories)}</p>
+                <h3 className={style.imgName}>{product.name}</h3>
                 <div className="vote">
                     <FaStar/>
                     <FaStar/>
@@ -74,7 +74,7 @@ export default function CardCarousel({ dataProduct, tempDataProduct,setTempDataP
                     <FaStar/>
                     <FaStar/>
                 </div>
-                <span><button onClick={() => handleAddToCart(product)} className={style.plusBtn}>+</button></span>
+                <button onClick={() => handleAddToCart(product)} className={style.plusBtn}>+</button>
               </div>
             </SwiperSlide>
           );

@@ -1,11 +1,32 @@
 .card {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin: 3rem 0 3rem;
 }
 .cardBig {
-    background-color: red;
-    width: 20%;
-    height: 20rem;
+    min-height: 25rem;
     text-align: center;
-    border-radius: 10%;
+    border-radius: 20%;
+    color: white;
+    padding-top: 2rem;
+    
+}
+.cardName {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.cardJob {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+.cardQuote {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
 }
 .cardList {
     display: flex;
@@ -17,4 +38,8 @@
 }
 .carouselItem {
     width: 30%
+}
+.cardSmall img {
+    width: 20px;
+    height: 20px;
 }

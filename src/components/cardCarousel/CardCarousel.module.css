@@ -1,0 +1,44 @@
+.btnContainer {
+    text-align: center;
+    margin: 2rem;
+    width: auto;
+}
+.btn {
+    background-color: #EEEEEE;
+    border-radius: 32px;
+    border: none;
+    padding: 0.5rem;
+}
+.btn:hover {
+    background-color: white;
+    border: 1px solid #EEEEEE;
+
+}
+.imgContainer {
+    max-height: 20rem;
+}
+.swiper {
+    align-items: center;
+}
+.productCard {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.imgName {
+    font-size: 21.3251px;
+    font-weight: 600;
+    color: #0D1B39;
+}
+.imgType {
+    font-weight: 400;
+    font-size: 16.7554px;
+    color: #8D8D8D;
+
+}
+.plusBtn {
+    border-radius: 100%;    
+    background-color: #0D1B39;
+    color: white;
+}

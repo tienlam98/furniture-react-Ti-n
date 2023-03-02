@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import CardCarousel from '../../components/cardCarousel/CardCarousel'
+import Card from '../../components/cards/Card'
 import Carousel from '../../components/cards/Carousel'
 import Footer from '../../components/footer/Footer'
 import Layout from '../../components/layout/Layout'
@@ -40,7 +41,12 @@ function HomePage() {
         <CardCarousel setTempDataProduct={setTempDataProduct} dataProduct={dataProduct} tempDataProduct={tempDataProduct}/>
         <Teaser textTitle={'experiences'} textTitle2={'we provide you the best experience'} textDes={'You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials'}/>
         <Teaser textTitle={'Materials'} textTitle2={'Very serious materials for making furniture'} textDes={'Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price'}/>
-        
+        <div className={styles.testimonialCardContainer}>
+        <Card src={'./images/testi1.jpg'} source={'./images/person1.jpg'} name={'Bang Upin'} job={'Pedagang Asongan'} quote={'“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“'}/>
+        <Card src={'./images/testi2.jpg'} source={'./images/person2.jpg'} name={'Ibuk Sukijan'} job={'Ibu Rumah Tangga'} quote={'“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“'}/>
+        <Card src={'./images/testi3.jpg'} source={'./images/person3.jpg'} name={'Mpok Ina'} job={'Karyawan Swasta'} quote={'“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“'}/>
+
+        </div>
       </div>
     </Layout>
   )
