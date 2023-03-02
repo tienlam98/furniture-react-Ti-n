@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import CardCarousel from '../../components/cardCarousel/CardCarousel'
 import Carousel from '../../components/cards/Carousel'
 import Footer from '../../components/footer/Footer'
 import Layout from '../../components/layout/Layout'
@@ -8,7 +9,18 @@ import Teaser from '../../components/teaser/Teaser'
 import WhyChooseUs from '../../components/whychooseus/WhyChooseUs'
 import styles from './homepage.module.css'
 
+
 function HomePage() {
+  const [tempDataProduct, setTempDataProduct] = useState([]);
+  const [dataProduct, setDataProduct] = useState([]);
+  useEffect(() => {
+    fetch("https://fe21-db.vercel.app/furniture")
+      .then(res => res.json())
+      .then(data => {
+        setTempDataProduct(data);
+        setDataProduct(data);
+      })
+  },[]);
   return (
     <Layout>
       <div className={styles.homepage}>
@@ -25,10 +37,10 @@ function HomePage() {
         </div>
         </div>
         <WhyChooseUs />
-        <ProductList />
+        <CardCarousel setTempDataProduct={setTempDataProduct} dataProduct={dataProduct} tempDataProduct={tempDataProduct}/>
         <Teaser textTitle={'experiences'} textTitle2={'we provide you the best experience'} textDes={'You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials'}/>
         <Teaser textTitle={'Materials'} textTitle2={'Very serious materials for making furniture'} textDes={'Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price'}/>
-        <Carousel name={'abc'} job={'abcd'} quote={'vvv'}/>
+        
       </div>
     </Layout>
   )

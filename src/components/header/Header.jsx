@@ -1,5 +1,6 @@
 import React from 'react'
 import Search from '../search/Search'
+import ShoppingCart from '../ShoppingCart/ShoppingCart';
 import styles from './header.module.css'
 
 function Header() {
@@ -31,7 +32,8 @@ function Header() {
             <a href="#">Shop</a>
           </li>
         </div>
-        <img src="/images/cart-icon.svg"></img>
+        
+        <ShoppingCart/>
       </nav>
     </header>
   );

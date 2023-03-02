@@ -3,3 +3,7 @@ body {
     --max-width: 998px;
     
 }
+
+.swiper-wrapper{
+    height: auto;
+}

@@ -22,11 +22,13 @@ function ProductList() {
         <h2 className={styles.productlistTitle}>Best Selling Product</h2>
         <div className={styles.productlistMenu}>
         <ProductListMenu categoryList={categoryList} category={category} setCategory={setCategory}/>
-        {product.map((product) =>
-        <ProductItem className={styles.productlistItem} product={product} key={product._id} />
+        </div>
+        <div className="container-list">
+        {product.slice(0,4).map((product) =>
+        <ProductItem className={styles.productlistItem} product={product} key={product._id} star={product.star}/>
         )}
         </div>
-        
+
         <a href='#'>View All <img src='./images/arrow.svg'></img></a>
     </div>
   )
